@@ -1,0 +1,36 @@
+package new1;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo_JunitAnnotations {
+	WebDriver driver;
+	@BeforeClass
+	public static void beforeclass() {
+		System.out.println("inside before class methods.");
+	}
+    @Before
+    public void setup() {
+	System.setProperty("webdriver.chrome.driver","C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.get("https://mce-stage.cisco.com/mce/");
+}
+	@Test
+	public void test() {
+		String pageTitle=driver.getTitle();
+		System.out.println("page title."+pageTitle);
+	}
+	@After
+	public void tearDown() {
+		driver.close();
+	}
+    @AfterClass
+    public static void AfterClass() {
+		System.out.println("inside after class method.");
+	}
+}

@@ -1,0 +1,16 @@
+package java1;
+
+public class arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   int[] arry1= {29,30,34,57,54};
+   System.out.println("print length "+ arry1.length);
+   System.out.println("print first "+ arry1[3]);
+   System.out.println("print last "+ arry1[arry1.length-1]);
+   
+   String[] num2= {"mon","tues","wed","thus","friday"};
+   System.out.println("print third "+ num2.length);
+	}
+
+}

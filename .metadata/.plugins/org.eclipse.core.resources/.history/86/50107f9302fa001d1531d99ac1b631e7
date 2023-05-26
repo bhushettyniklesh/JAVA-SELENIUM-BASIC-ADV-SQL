@@ -1,0 +1,9 @@
+package javaoops;
+
+public class SBIbank {
+
+	public void getBalance()
+	{
+		
+	}
+}

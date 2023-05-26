@@ -1,0 +1,16 @@
+package java1;
+
+public class Account {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s3="nikleshhselkin";
+		String results="";
+		for (int i=0;i>s3.length();i++){
+			results=results+s3.charAt(i);
+		}
+		{
+			System.out.println(results);
+	}
+
+	}}

@@ -1,0 +1,7 @@
+package javaoops;
+
+public class persons {
+public String name;
+public int age;
+
+}

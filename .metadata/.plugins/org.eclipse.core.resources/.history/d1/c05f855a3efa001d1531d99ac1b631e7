@@ -1,0 +1,44 @@
+package Collections;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+	private static final int  = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names= {"ravi","raj","money","bunny"};
+		 
+		 System.out.println(names[3]);
+		 
+		 
+		 ArrayList<String> list1=new ArrayList<String>();
+		 list1.add("krush");
+		 list1.add("junny");
+		 list1.add("zuba");
+		 list1.add("guzzu");
+		 System.out.println(list1.size());
+		 System.out.println(list1.get(2));
+		 System.out.println(list1.get(list1.size()-1));
+		 System.out.println(list1);
+		 
+		 list1.set(1,"holy");   //to replace any string
+		 System.out.println(list1);
+		 
+		 list1.add(3, "fully");  ///to add any new String in a place of index
+		 System.out.println(list1);
+		 
+		 list1.remove(3);  //remove unwanted string
+		 System.out.println(list1);
+		 
+		 //iterate through the list important interview question
+		 for(int i=0;i<list1.size();i++);{
+			 System.out.println("hh" +list1);
+		 }
+			 
+		 
+		 
+	}
+
+}

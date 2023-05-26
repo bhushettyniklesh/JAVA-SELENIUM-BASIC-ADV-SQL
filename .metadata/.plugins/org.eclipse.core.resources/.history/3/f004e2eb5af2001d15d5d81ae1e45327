@@ -1,0 +1,28 @@
+package java1;
+
+public class loopingexample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int num=1;
+       while (num<11) {
+    	   System.out.println(num);
+    	   num =num+1;
+    	   }
+       System.out.println("ended");
+    	   //
+    	   int num2=10;
+    		   while(num2>0)
+    		   {
+    			   if(num2==5)
+    			   {
+    			   System.out.println("skip");
+    			   num2--;
+    			   continue;
+    			   }
+    	   System.out.println(num2);
+    	   num2--;
+       }
+    	  }
+	
+	}

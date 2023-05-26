@@ -1,0 +1,11 @@
+package java1;
+
+public class arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   int[] arry1= {29,30,34,57,54};
+   System.out.println("print length "+ arry1.length);
+	}
+
+}

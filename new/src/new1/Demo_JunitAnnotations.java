@@ -1,0 +1,73 @@
+package new1;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.rules.Timeout;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Demo_JunitAnnotations {
+	WebDriver driver;
+	private WebElement WebElement;
+	@BeforeClass
+	public static void beforeclass() {
+		System.out.println("inside before class methods.");
+	}
+    @SuppressWarnings("deprecation")
+	@Before
+    public void setup() throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.get("https://online.actitime.com/cisco10/login.do");
+	Thread.sleep(9000);
+}
+	@SuppressWarnings({ "unused", "deprecation" })
+	@Test
+	public void test() throws InterruptedException {
+		String pageTitle=driver.getTitle();
+		System.out.println("page title."+pageTitle);
+		driver.findElement(By.name("username")).sendKeys("nbhushet@cisco.com");
+		driver.findElement(By.name("pwd")).sendKeys("Niklesh@123");
+		driver.findElement(By.id("loginButton")).click();
+		String message=driver.findElement(By.xpath("/html/body/div[13]/div[2]/div/div[1]/div[1]/h3")).getText();
+		System.out.println("message."+message);
+		String ExpectedMessage = "Enter Time-Track for";
+		Assert.assertEquals(message, ExpectedMessage);
+		driver.findElement(By.partialLinkText("Tasks")).click();
+		org.openqa.selenium.WebElement table=driver.findElement(By.xpath("//*[@id=\"taskListBlock\"]/div[2]/div[1]/div[1]/table"));
+List<org.openqa.selenium.WebElement> row= table.findElements(By.tagName("tr"));
+
+for (org.openqa.selenium.WebElement row1:row)
+{
+	List<org.openqa.selenium.WebElement> cols=row1.findElements(By.tagName("td"));
+	for(org.openqa.selenium.WebElement col:cols) {
+		System.out.println(col.getText());
+	}}
+
+	}
+	@After
+	public void tearDown() throws InterruptedException {
+		driver.findElement(By.partialLinkText("Time-Track")).click();
+		driver.findElement(By.xpath("//*[@id=\"logoutLink\"]")).click();
+		System.out.println("sucessfully logout");
+		driver.close();
+	
+	}
+    @AfterClass
+    public static void AfterClass() {
+		System.out.println("inside after class method.");
+	}
+}

@@ -1,0 +1,8 @@
+package javaoops;
+
+public class HDFCbank extends bankExample{
+
+	public void getBalance() {
+		
+	}
+}

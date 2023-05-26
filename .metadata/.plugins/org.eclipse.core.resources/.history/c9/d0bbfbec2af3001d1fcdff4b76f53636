@@ -1,0 +1,10 @@
+package java1;
+
+public class Account {
+
+	public double getBalance(int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

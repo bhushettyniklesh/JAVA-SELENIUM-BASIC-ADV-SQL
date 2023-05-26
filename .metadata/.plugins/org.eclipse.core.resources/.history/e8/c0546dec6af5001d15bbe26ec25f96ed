@@ -1,0 +1,17 @@
+package javaoops;
+
+public class RunnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+oops emp=new oops();
+emp.name="niklesh";
+emp.empid=1238401;
+emp.DispalyName();
+emp.Dispalyempid();//if we want more names and empid display we can add and create object.
+oops emp=new opps("ram",1001);
+emp.DispalyName();
+emp.Dispalyempid();
+	}
+
+}

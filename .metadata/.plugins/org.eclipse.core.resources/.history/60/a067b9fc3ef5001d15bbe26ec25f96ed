@@ -1,0 +1,10 @@
+package javaoops;
+
+public class oops {
+ String name;
+ int empid;
+  
+ public void Dispalyname() {
+	 System.out.println(name);
+ }
+}

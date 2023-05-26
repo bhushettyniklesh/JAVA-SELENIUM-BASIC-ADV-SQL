@@ -1,0 +1,33 @@
+package java1;
+
+public class arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   int[] arry1= {29,30,34,57,54};
+   System.out.println("print length "+ arry1.length);
+   System.out.println("print first "+ arry1[3]);
+   System.out.println("print last "+ arry1[arry1.length-1]);
+   
+   String[] num2= {"mon","tues","wed","thus","friday"};
+   System.out.println("print third "+ num2.length);
+   System.out.println("print 3 string "+ num2[2]);
+   System.out.println("print last "+ num2[num2.length-1]);
+   
+   String s1="i love my indian culture and flag";
+   String[] arry4=s1.split(" ");
+   System.out.println("world count "+arry4.length);
+	
+  int[] args1= {2,3,4,5,6,7,8};
+  
+  for (int i=0;i<args1.length;i++)
+  {
+	  System.out.println(args1[i]);
+  }
+  int[] args2= {55,53,54,5,657,25};
+  for(int val:args2)
+  {
+	  System.out.println(val);
+  }
+	}}
+

@@ -1,0 +1,6 @@
+package javaoops;
+
+public class inherhits extends persons {
+public int ssn;
+
+}

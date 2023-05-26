@@ -1,0 +1,32 @@
+package new1;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+public class Demo_JunitAnnotations {
+	WebDriver driver;
+	@BeforeClass
+	public static void beforeclass() {
+		System.out.println("inside before class methods.");
+	}
+    @Before
+    public void Before() {
+	System.out.println("inside before method.");
+}
+	@Test
+	public void test() {
+		System.out.println("inside test methods.");
+	}
+	@After
+	public void After() {
+		System.out.println("inside after method.");
+	}
+    @AfterClass
+    public static void AfterClass() {
+		System.out.println("inside after class method.");
+	}
+}

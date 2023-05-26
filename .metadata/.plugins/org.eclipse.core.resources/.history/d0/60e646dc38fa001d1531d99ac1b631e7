@@ -1,0 +1,15 @@
+package Collections;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names= {"ravi","raj","money","bunny"};
+		 
+		 System.out.println(names[3]);
+		 
+		 
+		 ArrayList<String> list1=new ArrayList<String>();
+	}
+
+}

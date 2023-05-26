@@ -1,0 +1,20 @@
+package Collections;
+
+import java.util.HashMap;
+
+public class HashMaps {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  HashMap<String,Integer> s2=new HashMap<String,Integer>();
+  s2.put("mango", 1);
+  s2.put("apple", 3);
+  s2.put("graps", 2);
+  s2.put("potato", 4);
+  System.out.println(s2);
+  
+  
+  
+	}
+
+}
