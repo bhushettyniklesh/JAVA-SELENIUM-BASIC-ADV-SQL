@@ -1,5 +1,0 @@
-package javaoops;
-
-public interface BankInterface {
-
-}

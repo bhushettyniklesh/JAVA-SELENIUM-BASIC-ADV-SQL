@@ -1,5 +1,7 @@
 package java1;
 
+import javax.sql.RowSet;
+
 public class arrays {
 
 	private static int R = 0;

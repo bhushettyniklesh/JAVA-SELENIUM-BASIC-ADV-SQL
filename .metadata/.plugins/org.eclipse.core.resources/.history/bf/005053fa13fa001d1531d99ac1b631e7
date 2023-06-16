@@ -1,9 +1,0 @@
-package javaoops;
-
-public class SBIbank extends bankExample{
-
-	public void getBalance()
-	{
-		
-	}
-}

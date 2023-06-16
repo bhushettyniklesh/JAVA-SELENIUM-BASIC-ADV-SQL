@@ -1,9 +1,0 @@
-package javaoops;
-
-public class Encapsulation {
-
-	private int phoneNumber;
-	private String collageName;
-	private int bankBalance;
-	
-}
