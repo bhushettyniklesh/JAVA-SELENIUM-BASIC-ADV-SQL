@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-23T16:31:25Z" name="Suite" finished-at="2023-06-23T16:31:37Z" duration-ms="12588">
+    <groups>
+    </groups>
+    <test started-at="2023-06-23T16:31:25Z" name="Test" finished-at="2023-06-23T16:31:37Z" duration-ms="12588">
+      <class name="Test6.swaglab2">
+        <test-method is-config="true" signature="reports()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:25Z" name="reports" finished-at="2023-06-23T16:31:25Z" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reports -->
+        <test-method is-config="true" signature="swag3(java.lang.reflect.Method)[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:25Z" name="swag3" finished-at="2023-06-23T16:31:30Z" duration-ms="4892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Test6.swaglab2.lab1() throws com.codoid.products.exception.FilloException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swag3 -->
+        <test-method signature="lab1()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:30Z" name="lab1" finished-at="2023-06-23T16:31:30Z" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lab1 -->
+        <test-method is-config="true" signature="teardo()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:30Z" name="teardo" finished-at="2023-06-23T16:31:32Z" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardo -->
+        <test-method is-config="true" signature="swag3(java.lang.reflect.Method)[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:32Z" name="swag3" finished-at="2023-06-23T16:31:35Z" duration-ms="3171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Test6.swaglab2.lab2() throws com.codoid.products.exception.FilloException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swag3 -->
+        <test-method signature="lab2()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:35Z" name="lab2" finished-at="2023-06-23T16:31:36Z" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lab2 -->
+        <test-method is-config="true" signature="teardo()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:36Z" name="teardo" finished-at="2023-06-23T16:31:37Z" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardo -->
+        <test-method is-config="true" signature="test()[pri:0, instance:Test6.swaglab2@455b6df1]" started-at="2023-06-23T16:31:37Z" name="test" finished-at="2023-06-23T16:31:37Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Test6.swaglab2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
